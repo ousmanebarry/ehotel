@@ -12,7 +12,7 @@ The web application was built using Typescript and Next JS for the frontend and 
 
 To install the project, follow these steps:
 
-Clone the repository to your local machine: `git@github.com:alexander-azizi-martin/e-hotel.git`
+Clone the repository to your local machine
 
 Navigate to the project directory: `cd e-hotel`
 
@@ -45,7 +45,7 @@ Open your browser and go to http://localhost:3000
 
 Create a `.env` file in the `/frontend` directory.
 
-In the file, include the following lines: 
+In the file, include the following lines:
 
 ```
 NEXT_PUBLIC_URL=(the URL the backend is running on. The flash app should print to the consol running on URL. Use that URL here.)
@@ -80,7 +80,7 @@ Install dependencies by running the following in your command line: `pip install
 
 Setup an environment variable file of format `.env` in the root backend directory.
 
-In the file, include the following lines: 
+In the file, include the following lines:
 
 ```
 DB_HOST=localhost
