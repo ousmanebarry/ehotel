@@ -1,9 +1,6 @@
-from flask import Flask, request, jsonify, current_app
-from flask_restx import Api, Resource, fields
-from dotenv import load_dotenv
+from flask import Flask
+from flask_restx import Api
 from flask_jwt_extended import JWTManager
-import os
-import json
 from flask_cors import CORS
 from auth import auth_namespace
 from hotel import hotel_namespace

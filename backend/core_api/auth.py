@@ -1,6 +1,6 @@
 from flask_restx import Resource, Namespace, fields
 from flask import current_app
-from flask import Flask, request
+from flask import request
 from flask_jwt_extended import jwt_required, create_access_token, get_jwt_identity, get_jwt
 from werkzeug.security import generate_password_hash
 from datetime import datetime

@@ -1,7 +1,5 @@
 from main import create_app
-from config import ProdConfig, TestConfig
-from db.db_drivers import Database
-import os
+from config import ProdConfig
 
 config = ProdConfig()
 

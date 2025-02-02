@@ -1,7 +1,7 @@
-from flask import Flask, request, jsonify
+from flask import request
 from flask import current_app
 from flask_restx import Resource, Namespace, fields
-from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity, get_jwt
+from flask_jwt_extended import jwt_required, get_jwt
 
 hotel_namespace = Namespace("hotel", description="All routes under this namespace concern hotel operations.")
 

@@ -1,11 +1,9 @@
-from sqlalchemy.sql.expression import text
-from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.security import check_password_hash
 from dotenv import load_dotenv
 from random import randint
 import os
 import psycopg2
 import datetime
-import random
 import traceback
 
 load_dotenv()
