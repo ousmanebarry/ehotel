@@ -1,0 +1,11 @@
+Manager (Aboubacar Barry)
+ssn: 2
+password: ottawa
+
+Employee (Anya Bose)
+ssn: 1
+password: ottawa
+
+Customer (Ousmane Barry)
+ssn: 100
+password: ottawa
