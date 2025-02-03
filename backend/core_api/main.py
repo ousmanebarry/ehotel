@@ -16,7 +16,7 @@ def create_app(config):
     app.db = Database(config.DB_NAME, config.DB_USER, config.DB_PASSWORD, config.DB_HOST, config.DB_PORT)
     CORS(app)
     JWTManager(app)
-    api = Api(app, doc="/docs")
+    api = Api(app)
     api.add_namespace(hotel_namespace)
     api.add_namespace(hotel_chain_namespace)
     api.add_namespace(room_namespace)

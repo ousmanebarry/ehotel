@@ -1666,7 +1666,7 @@ class Database(object):
 #db = Database(DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT)
 if __name__ == '__main__':
     test_db = Database(TEST_DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT)
-    '''
+    
     start_date = '2023-04-07'
     end_date = '2023-04-13'
     res = test_db.search_hotels_and_rooms(start_date, end_date)
@@ -1684,4 +1684,4 @@ if __name__ == '__main__':
                 print(f"\t\tView Type: {room['view_type']}")
                 print(f"\t\tPrice per Night: {room['price_per_night']}")
                 print(f"\t\tIs Extendable: {room['is_extendable']}")
-                print(f"\t\tRoom Problems: {room['room_problems']}")'''
+                print(f"\t\tRoom Problems: {room['room_problems']}")
