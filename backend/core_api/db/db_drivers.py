@@ -1662,26 +1662,4 @@ class Database(object):
         results = self.cursor.fetchall()
 
         return results
-
-#db = Database(DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT)
-if __name__ == '__main__':
-    test_db = Database(TEST_DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT)
     
-    start_date = '2023-04-07'
-    end_date = '2023-04-13'
-    res = test_db.search_hotels_and_rooms(start_date, end_date)
-    # to print out the results of the search query properly.
-    for chain in res:
-        print(f"Chain Name: {chain['chain_name']}")
-        for hotel in chain['hotels']:
-            print(f"\tHotel Name: {hotel['address_street_name']}")
-            print(f"\tAddress: {hotel['address_street_number']} {hotel['address_street_name']}, {hotel['address_city']}, {hotel['address_province_state']}, {hotel['address_country']}")
-            print(f"\tContact Email: {hotel['contact_email']}")
-            print(f"\tStar Rating: {hotel['star_rating']}")
-            for room in hotel['rooms']:
-                print(f"\t\tRoom Number: {room['room_number']}")
-                print(f"\t\tRoom Capacity: {room['room_capacity']}")
-                print(f"\t\tView Type: {room['view_type']}")
-                print(f"\t\tPrice per Night: {room['price_per_night']}")
-                print(f"\t\tIs Extendable: {room['is_extendable']}")
-                print(f"\t\tRoom Problems: {room['room_problems']}")
