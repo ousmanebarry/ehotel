@@ -1,9 +1,9 @@
-Manager (Aboubacar Barry)
-ssn: 2
+Manager (John Doe)
+ssn: 1
 password: ottawa
 
-Employee (Anya Bose)
-ssn: 1
+Employee (Jane Doe)
+ssn: 2
 password: ottawa
 
 Customer (Ousmane Barry)
